@@ -1,3 +1,12 @@
+function BlockStart() {
+  return (
+    <mesh>
+      <boxGeometry args={[4, 0.2, 4]} />
+      <meshStandardMaterial color='limegreen' />
+    </mesh>
+  );
+}
+
 export default function Level() {
   return (
     <>
@@ -20,6 +29,7 @@ export default function Level() {
         <planeGeometry />
         <meshStandardMaterial color='greenyellow' />
       </mesh>
+      <BlockStart />
     </>
   );
 }
