@@ -1,15 +1,6 @@
-import { OrbitControls } from '@react-three/drei';
-import Lights from './Lights.jsx';
-import Level from './Level.jsx';
-
-export default function Experience() {
+export default function Level() {
   return (
     <>
-      <OrbitControls makeDefault />
-
-      <Lights />
-      <Level />
-
       <mesh castShadow position-x={-2}>
         <sphereGeometry />
         <meshStandardMaterial color='orange' />
